@@ -6,7 +6,7 @@
  * @copyright BSD License (see LICENSE.md or https://www.libelektra.org)
  */
 
-export { default as generateId } from "uuid/v4";
+export { v4 as generateId } from "uuid";
 
 import { ROOT_PATH } from "../config";
 
