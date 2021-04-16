@@ -13,6 +13,8 @@
   "dependencies": {
     "@bosket/core": "^0.4.4",
     "@bosket/tools": "^0.4.4",
+    "@babel/core": "^7.0.0",
+    "typescript": "^3.9.0",
     "ajv": "^6.12.5",
     "bosket-react": "^0.4.6",
     "react-transition-group": "^1.2.0",
