@@ -60,9 +60,9 @@
 }
 
 /* Newer browsers */
-@supports (mask: url('/folded.svg') no-repeat) {
+@supports (mask: url('../static/folded.svg') no-repeat) {
   .ExplorerView ul > li.category .opener {
-    mask: url('/folded.svg') no-repeat;
+    mask: url('../static/folded.svg') no-repeat;
     background-color: #000000;
     transition: all 0.2s;
   }
@@ -99,9 +99,9 @@
 }
 
 /* Older browsers, e.g. Firefox ESR */
-@supports not (mask: url('/folded.svg') no-repeat) {
+@supports not (mask: url('../static/folded.svg') no-repeat) {
   .ExplorerView ul > li.category .opener {
-    background-image: url('/folded.svg');
+    background-image: url('../static/folded.svg');
     background-repeat: no-repeat;
   }
 }
@@ -131,7 +131,7 @@ input[type="search"] {
   padding-left: 48px;
   font-family: Roboto;
   font-size: 14px;
-  background: url('/search.svg') no-repeat;
+  background: url('../static/search.svg') no-repeat;
   background-position: 16px center;
   background-color: #FAFAFA;
   transition: box-shadow 0.5s;
