@@ -86,8 +86,8 @@ Files: scripts/realpath
 Copyright: 2014 Michael Kropat
 License: MIT
 
-Files: src/tools/web/client/public/Roboto-Light.ttf
-       src/tools/web/client/public/Roboto-Regular.ttf
+Files: src/tools/webui/src/static/Roboto-Light.ttf
+       src/tools/webui/src/static/Roboto-Regular.ttf
 Copyright: 2012 Google
 License: Apache-2.0
 
