@@ -39,6 +39,6 @@
   },
   "devDependencies": {
     "concurrently": "^6.0.2",
-    "webpack": "^5.33.2"
+    "webpack": "^4.44.2"
   }
 }
