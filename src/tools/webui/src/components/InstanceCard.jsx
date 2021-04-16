@@ -8,14 +8,10 @@
 
 import React from "react";
 
-import { Card, CardHeader, CardText } from "material-ui/Card";
-import FlatButton from "material-ui/FlatButton";
-import TextField from "material-ui/TextField";
+import { Card, CardContent } from "@material-ui/core";
+import { Button, TextField, SelectField, MenuItem, IconButton } from '@material-ui/core';
 import { Link } from "react-router-dom";
-import SelectField from "material-ui/SelectField";
-import MenuItem from "material-ui/MenuItem";
-import IconButton from "material-ui/IconButton";
-import PlayIcon from "material-ui/svg-icons/av/play-arrow";
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 
 import { VISIBILITY_LEVELS, HOST_REGEX } from "../utils";
 
@@ -80,7 +76,7 @@ export default class InstanceCard extends React.Component {
                 iconStyle={{ width: 40, height: 40 }}
                 style={{ width: 48, height: 48, padding: 4 }}
               >
-                <PlayIcon />
+                <PlayArrowIcon />
               </IconButton>
             </Link>
           }
@@ -100,7 +96,7 @@ export default class InstanceCard extends React.Component {
           actAsExpander={true}
           showExpandableButton={true}
         />
-        <CardText expandable={true}>
+        <CardContent expandable={true}>
           <div style={{ display: "flex" }}>
             <div style={{ flex: 1 }}>
               <TextField
@@ -205,7 +201,7 @@ export default class InstanceCard extends React.Component {
               disabled={id === "my"}
             />
           </div>
-        </CardText>
+        </CardContent>
       </Card>
     );
   }

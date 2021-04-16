@@ -8,8 +8,8 @@
 
 import React from "react";
 
-import DoneIcon from "material-ui/svg-icons/action/done";
-import ErrorIcon from "material-ui/svg-icons/navigation/close";
+import DoneIcon from '@material-ui/icons/Done';
+import ErrorIcon from '@material-ui/icons/Error';
 
 const SavedIcon = ({ saved, err, style }) => {
   const savedIconBaseStyle = {

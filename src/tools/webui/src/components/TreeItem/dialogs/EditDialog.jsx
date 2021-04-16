@@ -8,7 +8,7 @@
 
 import React, { Component } from "react";
 
-import FlatButton from "material-ui/FlatButton";
+import { Button } from "@material-ui/core";
 import FocusTrapDialog from "./FocusTrapDialog.jsx";
 import { fromElektraBool } from "../../../utils";
 

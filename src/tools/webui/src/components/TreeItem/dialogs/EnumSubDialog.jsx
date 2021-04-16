@@ -8,10 +8,13 @@
 
 import React, { Component } from "react";
 
+import { TextField, IconButton } from '@material-ui/core';
+
 import TextField from "material-ui/TextField";
 import IconButton from "material-ui/IconButton";
-import ContentAddIcon from "material-ui/svg-icons/content/add";
-import ActionDeleteIcon from "material-ui/svg-icons/action/delete";
+
+import DeleteIcon from '@material-ui/icons/Delete';
+import AddIcon from '@material-ui/icons/Add';
 
 import SavedIcon from "../SavedIcon.jsx";
 import debounce from "../../debounce";
@@ -80,7 +83,7 @@ export default class EnumSubDialog extends Component {
             tooltip="create new option"
             onClick={this.handleCreate}
           >
-            <ContentAddIcon color="#00BCD4" />
+            <AddIcon color="#00BCD4" />
           </IconButton>
           <IconButton
             style={{ width: 24, height: 24, padding: 4 }}
@@ -88,7 +91,7 @@ export default class EnumSubDialog extends Component {
             tooltip="delete last option"
             onClick={this.handleDelete}
           >
-            <ActionDeleteIcon />
+            <DeleteIcon />
           </IconButton>
         </h3>
         <div style={{ display: "block" }}>

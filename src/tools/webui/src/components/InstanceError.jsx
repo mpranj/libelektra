@@ -7,8 +7,8 @@
  */
 
 import React from "react";
-import FlatButton from "material-ui/FlatButton";
-import NavigationRefresh from "material-ui/svg-icons/navigation/refresh";
+import { Button } from '@material-ui/core';
+import RefreshIcon from '@material-ui/icons/Refresh';
 
 const InstanceError = ({ instance, error, refresh }) => {
   const { name, message } = error;
@@ -34,7 +34,7 @@ const InstanceError = ({ instance, error, refresh }) => {
           Once it is running, you can
           <FlatButton
             label="refresh"
-            icon={<NavigationRefresh />}
+            icon={<RefreshIcon />}
             onClick={refresh}
             style={{ marginLeft: "0.5em", marginRight: "0.5em" }}
           />

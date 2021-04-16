@@ -8,7 +8,7 @@
 
 import React, { Component } from "react";
 
-import { RadioButton, RadioButtonGroup } from "material-ui/RadioButton";
+import { RadioButton, RadioButtonGroup } from "@material-ui/core";
 
 import { fromElektraBool } from "../../../utils";
 

@@ -7,8 +7,8 @@
  */
 
 import React from "react";
-import ActionTOC from "material-ui/svg-icons/action/toc";
-import IconButton from "material-ui/IconButton";
+import TocIcon from '@material-ui/icons/Toc';
+import { IconButton } from '@material-ui/core';
 
 const ArrayIcon = () => (
   <IconButton
@@ -16,7 +16,7 @@ const ArrayIcon = () => (
     iconStyle={{ width: 18, height: 18, opacity: 0.3 }}
     tooltip="this is an array"
   >
-    <ActionTOC />
+    <TocIcon />
   </IconButton>
 );
 

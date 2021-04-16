@@ -8,7 +8,7 @@
 
 import React, { Component } from "react";
 
-import TextField from "material-ui/TextField";
+import { TextField } from '@material-ui/core';
 
 import validateType from "./validateType";
 import debounce from "../../debounce";

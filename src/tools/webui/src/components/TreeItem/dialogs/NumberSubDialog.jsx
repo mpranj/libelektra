@@ -8,10 +8,13 @@
 
 import React, { Component } from "react";
 
+import { TextField, IconButton } from '@material-ui/core';
+
 import TextField from "material-ui/TextField";
 import IconButton from "material-ui/IconButton";
-import ActionDeleteIcon from "material-ui/svg-icons/action/delete";
-import ContentAddIcon from "material-ui/svg-icons/content/add";
+
+import DeleteIcon from '@material-ui/icons/Delete';
+import AddIcon from '@material-ui/icons/Add';
 
 import SavedIcon from "../SavedIcon.jsx";
 import debounce from "../../debounce";
@@ -86,7 +89,7 @@ class RangeItem extends Component {
             tooltip="delete range"
             onClick={onDelete}
           >
-            <ActionDeleteIcon />
+            <DeleteIcon />
           </IconButton>
         </span>
         {!last && <i>or</i>}
@@ -180,7 +183,7 @@ export default class NumberSubDialog extends Component {
             tooltip="create new range"
             onClick={this.handleCreate}
           >
-            <ContentAddIcon color="#00BCD4" />
+            <AddIcon color="#00BCD4" />
           </IconButton>
           <SavedIcon saved={saved} />
           {error && (

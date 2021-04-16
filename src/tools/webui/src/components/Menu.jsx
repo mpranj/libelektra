@@ -11,14 +11,14 @@
 
 import React from "react";
 
-import { Toolbar, ToolbarGroup, ToolbarTitle } from "material-ui/Toolbar";
-import RaisedButton from "material-ui/RaisedButton";
-import CircularProgress from "material-ui/CircularProgress";
-import ContentAddIcon from "material-ui/svg-icons/content/add";
-import ContentUndoIcon from "material-ui/svg-icons/content/undo";
-import ContentRedoIcon from "material-ui/svg-icons/content/redo";
-import NavigationArrowBack from "material-ui/svg-icons/navigation/arrow-back";
-import NavigationChevronRight from "material-ui/svg-icons/navigation/chevron-right";
+import { Toolbar, ToolbarGroup, ToolbarTitle } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
+import { CircularProgress } from '@material-ui/core';
+import AddIcon from '@material-ui/icons/Add';
+import UndoIcon from '@material-ui/icons/Undo';
+import RedoIcon from '@material-ui/icons/Redo';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { Link } from "react-router-dom";
 
 const HEADER_MARGIN = "16px 10px 0 -10px";
@@ -119,9 +119,9 @@ export default class Menu extends React.Component {
 
     const mainActions = (
       <ToolbarGroup>
-        <RaisedButton
+        <Button variant="contained"
           tabIndex={0}
-          icon={<ContentAddIcon />}
+          icon={<AddIcon />}
           label="instance"
           primary={true}
           onClick={addInstance}
@@ -136,16 +136,16 @@ export default class Menu extends React.Component {
 
     const subpageActions = (
       <ToolbarGroup>
-        <RaisedButton
+        <Button variant="contained"
           tabIndex={0}
-          icon={<ContentUndoIcon />}
+          icon={<UndoIcon />}
           label="undo"
           onClick={onUndo}
           disabled={!canUndo}
         />
-        <RaisedButton
+        <Button variant="contained"
           tabIndex={0}
-          icon={<ContentRedoIcon />}
+          icon={<RedoIcon />}
           label="redo"
           onClick={onRedo}
           disabled={!canRedo}

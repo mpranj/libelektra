@@ -8,7 +8,7 @@
 
 import React from "react";
 
-import IconButton from "material-ui/IconButton";
+import { IconButton } from '@material-ui/core';
 
 const ActionButton = ({ icon, tooltip, onClick, size = 14 }) => (
   <IconButton

@@ -10,9 +10,9 @@
 
 import React, { Component } from "react";
 
-import { Card, CardHeader, CardText } from "material-ui/Card";
-import IconButton from "material-ui/IconButton";
-import NavigationRefresh from "material-ui/svg-icons/navigation/refresh";
+import { Card, CardContent } from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
+import RefreshIcon from '@material-ui/icons/Refresh';
 
 import TreeView from "../../containers/ConnectedTreeView";
 import TreeSearch from "../../containers/ConnectedTreeSearch";
@@ -210,13 +210,13 @@ export default class Configuration extends Component {
               </h1>
             }
           />
-          <CardText>
+          <CardContent>
             <InstanceError
               instance={instance}
               error={instanceError}
               refresh={this.refresh}
             />
-          </CardText>
+          </CardContent>
         </Card>
       );
     }
@@ -247,7 +247,7 @@ export default class Configuration extends Component {
           onClick={this.refresh}
           tooltip="refresh"
         >
-          <NavigationRefresh />
+          <RefreshIcon />
         </IconButton>
       </h1>
     );
@@ -284,7 +284,7 @@ export default class Configuration extends Component {
             </span>
           }
         />
-        <CardText>
+        <CardContent>
           {instanceError ? (
             <InstanceError
               instance={instance}
@@ -331,7 +331,7 @@ export default class Configuration extends Component {
               Loading configuration data...
             </div>
           )}
-        </CardText>
+        </CardContent>
       </Card>
     );
   }

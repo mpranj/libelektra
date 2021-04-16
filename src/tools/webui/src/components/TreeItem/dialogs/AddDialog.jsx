@@ -8,11 +8,9 @@
 
 import React, { Component } from "react";
 
-import FlatButton from "material-ui/FlatButton";
-import TextField from "material-ui/TextField";
-import SelectField from "material-ui/SelectField";
-import MenuItem from "material-ui/MenuItem";
-import ActionBuild from "material-ui/svg-icons/action/build";
+
+import { FlatButton, TextField, SelectField, MenuItem } from '@material-ui/core';
+import BuildIcon from '@material-ui/icons/Build';
 import FocusTrapDialog from "./FocusTrapDialog.jsx";
 
 import { VISIBILITY_LEVELS, visibility } from "../../../utils";
@@ -229,7 +227,7 @@ export default class AddDialog extends Component {
                 <br />
                 Please create the key, then
                 <i style={{ paddingLeft: 6, paddingRight: 8 }}>
-                  <ActionBuild
+                  <BuildIcon
                     style={{
                       width: 14,
                       height: 14,

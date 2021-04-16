@@ -8,11 +8,8 @@
 
 import React, { Component } from "react";
 
-import FlatButton from "material-ui/FlatButton";
-import TextField from "material-ui/TextField";
-import SelectField from "material-ui/SelectField";
-import MenuItem from "material-ui/MenuItem";
-import Checkbox from "material-ui/Checkbox";
+import { FlatButton, TextField, SelectField, MenuItem, Checkbox} from '@material-ui/core';
+
 import FocusTrapDialog from "./FocusTrapDialog.jsx";
 
 import SavedIcon from "../SavedIcon.jsx";

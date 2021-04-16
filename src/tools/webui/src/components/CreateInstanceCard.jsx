@@ -13,11 +13,8 @@
 
 import React from "react";
 
-import { Card, CardHeader, CardText } from "material-ui/Card";
-import FlatButton from "material-ui/FlatButton";
-import TextField from "material-ui/TextField";
-import SelectField from "material-ui/SelectField";
-import MenuItem from "material-ui/MenuItem";
+import { Card, CardContent } from "@material-ui/core";
+import { Button, TextField, SelectField, MenuItem } from '@material-ui/core';
 
 import { VISIBILITY_LEVELS, HOST_REGEX } from "../utils";
 
@@ -78,7 +75,7 @@ export default class CreateInstanceCard extends React.Component {
           }
           subtitle="please enter a host and a friendly name"
         />
-        <CardText>
+        <CardContent>
           <div style={{ display: "flex" }}>
             <div style={{ flex: 1 }}>
               <TextField
@@ -173,7 +170,7 @@ export default class CreateInstanceCard extends React.Component {
               />
             )}
           </div>
-        </CardText>
+        </CardContent>
       </Card>
     );
   }

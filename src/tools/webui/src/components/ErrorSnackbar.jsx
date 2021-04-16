@@ -7,10 +7,8 @@
  */
 
 import React from "react";
-import Snackbar from "material-ui/Snackbar";
-import Dialog from "material-ui/Dialog";
-import FlatButton from "material-ui/FlatButton";
-import MoreIcon from "material-ui/svg-icons/navigation/chevron-right";
+import { Snackbar, Dialog, Button } from '@material-ui/core';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 export default class ErrorSnackbar extends React.Component {
   constructor(...args) {
@@ -92,7 +90,7 @@ export default class ErrorSnackbar extends React.Component {
         ) : (
           <FlatButton
             label="show details"
-            icon={<MoreIcon />}
+            icon={<ChevronRightIcon />}
             onClick={this.showDetails}
           />
         )}

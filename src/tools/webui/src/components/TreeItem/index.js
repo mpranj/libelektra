@@ -8,14 +8,14 @@
 
 import React, { Component } from "react";
 
-import ActionDelete from "material-ui/svg-icons/action/delete";
-import ActionBuild from "material-ui/svg-icons/action/build";
-import ContentAdd from "material-ui/svg-icons/content/add";
-import ContentCopy from "material-ui/svg-icons/content/content-copy";
-import ContentEdit from "material-ui/svg-icons/editor/mode-edit";
-import ContentPaste from "material-ui/svg-icons/content/content-paste";
+import DeleteIcon from '@material-ui/icons/Delete';
+import BuildIcon from '@material-ui/icons/Build';
+import AddIcon from '@material-ui/icons/Add';
+import EditIcon from '@material-ui/icons/Edit';
+import FileCopyIcon from '@material-ui/icons/FileCopy';
+import WarningIcon from '@material-ui/icons/Warning';
 import { CopyToClipboard } from "react-copy-to-clipboard";
-
+f
 import ActionButton from "./ActionButton.jsx";
 import ArrayIcon from "./ArrayIcon.jsx";
 import SavedIcon from "./SavedIcon.jsx";
@@ -331,11 +331,11 @@ export default class TreeItem extends Component {
                 )
               }
             >
-              <ActionButton icon={<ContentPaste />} tooltip="copy value" />
+              <ActionButton icon={<WarningIcon />} tooltip="copy value" />
             </CopyToClipboard>
           )}
           <ActionButton
-            icon={<ContentAdd />}
+            icon={<AddIcon />}
             onClick={this.handleOpen("add")}
             tooltip="create sub-key"
           />
@@ -374,7 +374,7 @@ export default class TreeItem extends Component {
             !valueVisible &&
             !(meta && meta["restrict/write"] === "1") && (
               <ActionButton
-                icon={<ContentEdit />}
+                icon={<EditIcon />}
                 onClick={this.handleOpen("edit")}
                 tooltip="edit value"
               />
@@ -416,7 +416,7 @@ export default class TreeItem extends Component {
           />
           {!rootLevel && (
             <ActionButton
-              icon={<ContentCopy />}
+              icon={<FileCopyIcon />}
               onClick={this.handleOpen("duplicate")}
               tooltip="duplicate key"
             />
@@ -431,7 +431,7 @@ export default class TreeItem extends Component {
           />
           {!rootLevel && (
             <ActionButton
-              icon={<ActionBuild />}
+              icon={<BuildIcon />}
               onClick={this.handleOpen("settings")}
               size={13}
               tooltip="configure metadata"
@@ -458,7 +458,7 @@ export default class TreeItem extends Component {
           />
           {!(meta && meta["restrict/remove"] === "1") && (
             <ActionButton
-              icon={<ActionDelete />}
+              icon={<DeleteIcon />}
               onClick={e => {
                 this.handleDelete(item);
                 e.preventDefault();

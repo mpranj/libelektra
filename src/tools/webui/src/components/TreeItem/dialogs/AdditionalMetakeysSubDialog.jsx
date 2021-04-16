@@ -8,11 +8,10 @@
 
 import React, { Component } from "react";
 
-import TextField from "material-ui/TextField";
-import FlatButton from "material-ui/FlatButton";
-import IconButton from "material-ui/IconButton";
-import ContentAddIcon from "material-ui/svg-icons/content/add";
-import ActionDeleteIcon from "material-ui/svg-icons/action/delete";
+import { TextField, FlatButton, IconButton } from '@material-ui/core';
+
+import DeleteIcon from '@material-ui/icons/Delete';
+import AddIcon from '@material-ui/icons/Add';
 
 import SavedIcon from "../SavedIcon.jsx";
 import debounce from "../../debounce";
@@ -95,7 +94,7 @@ export default class AdditionalMetakeysSubDialog extends Component {
           iconStyle={{ width: 16, height: 16 }}
           onClick={() => this.deleteItem(item)}
         >
-          <ActionDeleteIcon />
+          <DeleteIcon />
         </IconButton>
       </span>
     ));
@@ -156,7 +155,7 @@ export default class AdditionalMetakeysSubDialog extends Component {
         <FlatButton
           tabIndex="0"
           label="create new metakey"
-          icon={<ContentAddIcon />}
+          icon={<AddIcon />}
           primary
           style={{ marginLeft: 16 }}
           onClick={this.createKey}

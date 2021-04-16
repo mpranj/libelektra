@@ -8,7 +8,7 @@
 
 import React from "react";
 import FocusTrap from "focus-trap-react";
-import Dialog from "material-ui/Dialog";
+import { Dialog } from "@material-ui/core";
 
 const FocusTrapDialog = ({
   children,
