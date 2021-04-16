@@ -81,7 +81,7 @@ export default class Menu extends React.Component {
     );
 
     const title = (
-      <ToolbarGroup>
+      <Toolbar>
         <div style={{ display: "flex" }}>
           {subpage &&
           !singleInstanceMode && ( // show back button on subpages
@@ -114,11 +114,11 @@ export default class Menu extends React.Component {
             />
           )}
         </div>
-      </ToolbarGroup>
+      </Toolbar>
     );
 
     const mainActions = (
-      <ToolbarGroup>
+      <Toolbar>
         <Button variant="contained"
           tabIndex={0}
           icon={<AddIcon />}
@@ -131,11 +131,11 @@ export default class Menu extends React.Component {
             instances.length <= 0
           }
         />
-      </ToolbarGroup>
+      </Toolbar>
     );
 
     const subpageActions = (
-      <ToolbarGroup>
+      <Toolbar>
         <Button variant="contained"
           tabIndex={0}
           icon={<UndoIcon />}
@@ -150,7 +150,7 @@ export default class Menu extends React.Component {
           onClick={onRedo}
           disabled={!canRedo}
         />
-      </ToolbarGroup>
+      </Toolbar>
     );
 
     return (

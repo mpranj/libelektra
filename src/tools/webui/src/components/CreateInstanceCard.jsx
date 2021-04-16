@@ -13,7 +13,7 @@
 
 import React from "react";
 
-import { Card, CardContent } from "@material-ui/core";
+import { Card, CardContent, CardHeader } from "@material-ui/core";
 import { Button, TextField, Select, MenuItem } from '@material-ui/core';
 
 import { VISIBILITY_LEVELS, HOST_REGEX } from "../utils";
