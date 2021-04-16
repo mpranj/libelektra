@@ -7,7 +7,7 @@
  */
 
 import React from "react";
-import Snackbar from "material-ui/Snackbar";
+import { Snackbar } from '@material-ui/core';
 
 const fromTop = message => ({
   top: 0,
