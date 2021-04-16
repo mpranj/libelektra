@@ -8,7 +8,7 @@
 
 import React, { Component } from "react";
 
-import { TextField, FlatButton, IconButton } from '@material-ui/core';
+import { TextField, Button, IconButton } from '@material-ui/core';
 
 import DeleteIcon from '@material-ui/icons/Delete';
 import AddIcon from '@material-ui/icons/Add';

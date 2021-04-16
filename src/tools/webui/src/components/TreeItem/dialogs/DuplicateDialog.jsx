@@ -8,7 +8,7 @@
 
 import React, { Component } from "react";
 
-import { FlatButton, TextField } from '@material-ui/core';
+import { Button, TextField } from '@material-ui/core';
 import FocusTrapDialog from "./FocusTrapDialog.jsx";
 
 export default class DuplicateDialog extends Component {

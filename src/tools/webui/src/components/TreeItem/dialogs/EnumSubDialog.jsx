@@ -10,9 +10,6 @@ import React, { Component } from "react";
 
 import { TextField, IconButton } from '@material-ui/core';
 
-import TextField from "material-ui/TextField";
-import IconButton from "material-ui/IconButton";
-
 import DeleteIcon from '@material-ui/icons/Delete';
 import AddIcon from '@material-ui/icons/Add';
 

@@ -9,7 +9,7 @@
 import React from "react";
 
 import { Card, CardContent } from "@material-ui/core";
-import { Button, TextField, SelectField, MenuItem, IconButton } from '@material-ui/core';
+import { Button, TextField, Select, MenuItem, IconButton } from '@material-ui/core';
 import { Link } from "react-router-dom";
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 
@@ -170,7 +170,7 @@ export default class InstanceCard extends React.Component {
               />
             </div>
             <div style={{ flex: 1 }}>
-              <SelectField
+              <Select
                 ref="visibilityField"
                 floatingLabelText="visibility*"
                 floatingLabelFixed={true}
@@ -181,7 +181,7 @@ export default class InstanceCard extends React.Component {
                 {Object.keys(VISIBILITY_LEVELS).map(lvl => (
                   <MenuItem key={lvl} value={lvl} primaryText={">= " + lvl} />
                 ))}
-              </SelectField>
+              </Select>
             </div>
           </div>
           <div style={{ marginTop: 32 }}>

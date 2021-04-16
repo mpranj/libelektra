@@ -8,7 +8,7 @@
 
 import React, { Component } from "react";
 
-import { FlatButton, TextField, SelectField, MenuItem, Checkbox} from '@material-ui/core';
+import { Button, TextField, Select, MenuItem, Checkbox} from '@material-ui/core';
 
 import FocusTrapDialog from "./FocusTrapDialog.jsx";
 
@@ -364,7 +364,7 @@ export default class SettingsDialog extends Component {
             <SavedIcon saved={this.getSaved("description")} />
           </div>
           <div style={{ flex: 1 }}>
-            <SelectField
+            <Select
               floatingLabelText="visibility"
               floatingLabelFixed={true}
               onFocus={() =>
@@ -384,7 +384,7 @@ export default class SettingsDialog extends Component {
               {Object.keys(VISIBILITY_LEVELS).map(lvl => (
                 <MenuItem key={lvl} value={lvl} primaryText={lvl} />
               ))}
-            </SelectField>
+            </Select>
             <SavedIcon
               saved={this.getSaved("visibility")}
               style={{ paddingBottom: 16 }}
@@ -500,7 +500,7 @@ export default class SettingsDialog extends Component {
           <div>
             <div style={{ display: "flex", alignItems: "center" }}>
               <div style={{ flex: 1 }}>
-                <SelectField
+                <Select
                   floatingLabelText="type"
                   floatingLabelFixed={true}
                   onFocus={() =>
@@ -544,7 +544,7 @@ export default class SettingsDialog extends Component {
                   {KEY_TYPES.map(({ type, name }) => (
                     <MenuItem key={type} value={type} primaryText={name} />
                   ))}
-                </SelectField>
+                </Select>
                 <SavedIcon
                   saved={this.getSaved("check/type")}
                   style={{ paddingBottom: 16 }}

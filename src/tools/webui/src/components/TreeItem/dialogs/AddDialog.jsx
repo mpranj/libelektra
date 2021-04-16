@@ -9,7 +9,7 @@
 import React, { Component } from "react";
 
 
-import { FlatButton, TextField, SelectField, MenuItem } from '@material-ui/core';
+import { Button, TextField, Select, MenuItem } from '@material-ui/core';
 import BuildIcon from '@material-ui/icons/Build';
 import FocusTrapDialog from "./FocusTrapDialog.jsx";
 
@@ -180,7 +180,7 @@ export default class AddDialog extends Component {
             />
           </div>
           <div style={{ flex: 1 }}>
-            <SelectField
+            <Select
               floatingLabelText="type"
               floatingLabelFixed={true}
               onFocus={() =>
@@ -194,7 +194,7 @@ export default class AddDialog extends Component {
               {KEY_TYPES.map(({ type, name }) => (
                 <MenuItem key={type} value={type} primaryText={name} />
               ))}
-            </SelectField>
+            </Select>
           </div>
         </div>
         <div style={{ display: "flex" }}>
@@ -242,7 +242,7 @@ export default class AddDialog extends Component {
             )}
           </div>
           <div style={{ flex: 1 }}>
-            <SelectField
+            <Select
               floatingLabelText="visibility"
               floatingLabelFixed={true}
               onFocus={() =>
@@ -256,7 +256,7 @@ export default class AddDialog extends Component {
               {Object.keys(VISIBILITY_LEVELS).map(lvl => (
                 <MenuItem key={lvl} value={lvl} primaryText={lvl} />
               ))}
-            </SelectField>
+            </Select>
           </div>
         </div>
       </FocusTrapDialog>

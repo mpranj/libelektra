@@ -11,7 +11,7 @@
 
 import React from "react";
 
-import { Toolbar, ToolbarGroup, ToolbarTitle } from '@material-ui/core';
+import { Toolbar } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import { CircularProgress } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';

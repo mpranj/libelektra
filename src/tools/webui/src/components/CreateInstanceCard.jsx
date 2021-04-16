@@ -14,7 +14,7 @@
 import React from "react";
 
 import { Card, CardContent } from "@material-ui/core";
-import { Button, TextField, SelectField, MenuItem } from '@material-ui/core';
+import { Button, TextField, Select, MenuItem } from '@material-ui/core';
 
 import { VISIBILITY_LEVELS, HOST_REGEX } from "../utils";
 
@@ -141,7 +141,7 @@ export default class CreateInstanceCard extends React.Component {
               />
             </div>
             <div style={{ flex: 1 }}>
-              <SelectField
+              <Select
                 floatingLabelText="visibility*"
                 floatingLabelFixed={true}
                 onChange={(e, _, val) => this.setState({ visibility: val })}
@@ -150,7 +150,7 @@ export default class CreateInstanceCard extends React.Component {
                 {Object.keys(VISIBILITY_LEVELS).map(lvl => (
                   <MenuItem key={lvl} value={lvl} primaryText={">= " + lvl} />
                 ))}
-              </SelectField>
+              </Select>
             </div>
           </div>
           <div style={{ marginTop: 32 }}>

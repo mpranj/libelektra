@@ -8,7 +8,7 @@
 
 import React, { Component } from "react";
 
-import { RadioButton, RadioButtonGroup } from "@material-ui/core";
+import { Radio, RadioGroup } from "@material-ui/core";
 
 import { fromElektraBool } from "../../../utils";
 
@@ -27,10 +27,7 @@ export default class RadioButtons extends Component {
     const val = this.state.value === false ? value : this.state.value;
 
     return (
-      <RadioButtonGroup
-        id={id}
-        name={id}
-        valueSelected={val}
+      <RadioGroup aria-label={id} name={id} value={val} onChange={(evt, value) => onChange(value)}
         onChange={(evt, value) => onChange(value)}
         style={{
           display: "inline-block",
@@ -40,20 +37,17 @@ export default class RadioButtons extends Component {
         }}
       >
         {options.map(option => (
-          <RadioButton
-            tabIndex="0"
-            className="value"
-            key={id + "-" + option}
-            value={option}
-            label={option}
-            style={{ display: "inline-block", width: "auto", paddingRight: 32 }}
-            disabled={
-              (meta && meta.hasOwnProperty("binary")) ||
-              fromElektraBool(meta && meta["restrict/write"])
-            }
-          />
+        <FormControlLabel
+          value={option}
+          control={<Radio />}
+          label={option}
+          style={{ display: "inline-block", width: "auto", paddingRight: 32 }}
+          key={id + "-" + option}
+          disabled={
+                (meta && meta.hasOwnProperty("binary")) ||
+                fromElektraBool(meta && meta["restrict/write"])} />
         ))}
-      </RadioButtonGroup>
+      </RadioGroup>
     );
   }
 }
