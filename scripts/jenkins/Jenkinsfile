@@ -36,11 +36,6 @@ properties([
   )
 ])
 
-// Environment Variables
-environment {
-    DOCKER_BUILDKIT='1'
-}
-
 // If previous run is still running, cancel it unless we are building
 // code from the `master` branch.
 abortPreviousRunUnlessMaster()
