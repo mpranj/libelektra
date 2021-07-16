@@ -68,6 +68,12 @@ pipelineConfig {
   now = new Date()
 }
 
+// Environment Variables
+environment {
+    DOCKER_BUILDKIT='1'
+}
+
+
 DOCKER_IMAGES = [:]  // Containers docker image descriptions, populated during
                      // dockerInit()
 
