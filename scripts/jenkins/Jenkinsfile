@@ -136,25 +136,25 @@ def main() {
     }
   }
 
-//  stage("Main builds") {
-//    milestone label: "Main builds"
-//    parallel generateMainBuildStages()
-//  }
+  stage("Main builds") {
+    milestone label: "Main builds"
+    parallel generateMainBuildStages()
+  }
 
-//  stage("Full builds") {
-//    milestone label: "Full builds"
-//    parallel generateFullBuildStages()
-//  }
+  stage("Full builds") {
+    milestone label: "Full builds"
+    parallel generateFullBuildStages()
+  }
 
   stage("Build artifacts") {
     milestone label: "Build artifacts"
     parallel generateArtifactStages()
   }
 
-//  maybeStage("Deploy Website", isMaster()) {
-//    milestone label: "Deploy Website"
-//    parallel deployWebsite()
-//  }
+  maybeStage("Deploy Website", isMaster()) {
+    milestone label: "Deploy Website"
+    parallel deployWebsite()
+  }
 
   // maybeStage("Deploy Web UI", isMaster()) {
   //   deployWebUI()
