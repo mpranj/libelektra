@@ -354,7 +354,7 @@ you up-to-date with the multi-language support provided by Elektra.
 
 ### GitHub Actions
 
-- <<TODO>>
+- Use macOS 12 for builds. _(Mihael Pranjić @mpranj)_
 - <<TODO>>
 - <<TODO>>
 - <<TODO>>
