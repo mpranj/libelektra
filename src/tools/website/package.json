@@ -48,7 +48,7 @@
         "grunt-contrib-uglify": "latest",
         "grunt-contrib-watch": "latest",
         "grunt-preprocess": "latest",
-        "highlight.js": "^11.4.0",
+        "highlight.js": "^11.6.0",
         "jquery": "^3.6.0",
         "jshint-stylish": "latest",
         "ng-tags-input": "^3.2.0",
