@@ -55,7 +55,7 @@
         "rss": "^1.2.2",
         "satellizer": "^0.15.5",
         "slugify": "^1.5.0",
-        "underscore": "^1.12.1",
+        "underscore": "^1.13.6",
         "xmlbuilder": "^15.1.1"
     },
     "scripts": {
