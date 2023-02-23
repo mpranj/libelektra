@@ -23,7 +23,7 @@
     "test:server:webd": "npm start"
   },
   "dependencies": {
-    "body-parser": "^1.20.0",
+    "body-parser": "^1.20.2",
     "cookie-session": "^1.4.0",
     "cors": "^2.8.5",
     "cross-env": "^5.2.1",
