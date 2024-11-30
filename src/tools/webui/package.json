@@ -38,7 +38,7 @@
     "build": "react-scripts build"
   },
   "devDependencies": {
-    "concurrently": "^3.5.1",
+    "concurrently": "^7.6.0",
     "webpack": "^3.11.0"
   }
 }
